@@ -1,3 +1,46 @@
 .subscriber {
-  background-color: orangered;
+  display: grid;
+  grid-template-rows: minmax(min-content, 25rem);
+  background-color: #DFE8F7;
+
+  justify-content: center;
+  align-items: end;
+
+  .container {
+    position: relative;
+    top: 10%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent linear-gradient(89deg, #397AE1 0%, #ADDBEF 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 4px 8px #1767E526;
+    border-radius: 1.5rem;
+
+    color: #fff;
+
+    width: 62rem;
+    height: 20rem;
+    padding: 2rem;
+    text-align: center;
+
+    h2 {
+      font-size: 3.2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      margin: 0 auto;
+      color: #1767E5;
+      background-color: #fff;
+      width: 13.5rem;
+      height: 3.5rem;
+    }
+  }
 }
