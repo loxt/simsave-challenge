@@ -1,0 +1,12 @@
+.container {
+  background-color: #F6F6F9;
+  display: grid;
+
+  font-family: Roboto, sans-serif;
+
+  grid-template-rows: minmax(min-content, 6.5rem)
+                      minmax(min-content, 70vh)
+                      minmax(min-content, 38rem)
+                      minmax(min-content, 30rem)
+                      minmax(min-content, 25rem);
+}
