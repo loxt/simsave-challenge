@@ -2,7 +2,7 @@
   display: grid;
   justify-content: center;
 
-  grid-template-columns: repeat(4, 35rem);
+  grid-template-columns: repeat(auto-fit, 35rem);
   grid-template-rows: repeat(auto-fit, 35rem);
 
   grid-gap: 3rem;
@@ -11,6 +11,7 @@
   .card {
     border-radius: 1rem;
     background-color: #FFFFFF;
+    border: 1px solid #ebebeb;
 
     *:not(.point) {
       padding: 2rem;
@@ -69,5 +70,29 @@
         color: #35DB93;
       }
     }
+
+
+    p {
+      font-size: 1.6rem;
+      text-align: center;
+    }
+
+    button {
+      width: 13.5rem;
+      height: 3.5rem;
+
+      align-items: center;
+      border-radius: .2rem;
+      border: 1px solid #E0E0E0;
+      background-color: #fff;
+      color: #878787;
+
+      &.active {
+        color: red;
+      }
+
+      font-weight: 500;
+    }
   }
+
 }
