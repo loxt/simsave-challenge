@@ -47,6 +47,8 @@
 
     h2 {
       font-size: 2.8rem;
+      text-transform: uppercase;
+      margin-bottom: -3rem;
     }
 
     &--1 {
@@ -73,15 +75,17 @@
       }
     }
 
-
     p {
       font-size: 1.6rem;
       text-align: center;
+      max-height: 15rem;
     }
 
     button {
       width: 13.5rem;
       height: 3.5rem;
+
+      margin-top: 5rem;
 
       align-items: center;
       border-radius: .2rem;

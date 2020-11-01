@@ -1,4 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { HomeService } from '../home.service';
+import { BehaviorSubject } from 'rxjs';
+
+interface Card {
+  color: string;
+  text: string;
+  title: string;
+}
 
 @Component({
   selector: 'app-cards',
@@ -6,7 +14,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['../../../sass/components/home/cards.scss'],
 })
 export class CardsComponent implements OnInit {
-  constructor() {}
+  private readonly _cards = new BehaviorSubject<Card[]>([]);
+  readonly cards = this._cards.asObservable();
 
-  ngOnInit(): void {}
+  constructor(private readonly homeService: HomeService) {}
+
+  ngOnInit(): void {
+    this.homeService.getCards().subscribe((data) => {
+      this._cards.next(data.products);
+    });
+  }
 }

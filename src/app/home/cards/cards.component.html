@@ -1,45 +1,45 @@
 <div class="cards">
-  <div class="card card--1">
-    <div class="point point--1"></div>
-    <h2>URGENCY</h2>
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
+  <div *ngFor="let card of cards | async; let i = index" class="card card--{{i + 1}}">
+      <div class="point point--{{i + 1}}"></div>
+      <h2>{{card.title}}</h2>
+      <p>{{card.text}}</p>
 
-    <div>
-      <button class="active" mat-raised-button>Saiba mais</button>
-    </div>
+      <div>
+        <button class="{{i == 0 ? 'active' : ''}}" mat-raised-button>{{i == 0 ? 'Saiba mais' : 'Em breve'}}</button>
+      </div>
   </div>
-  <div class="card card--2">
-    <div class="point point--2"></div>
-    <h2>STUDENT</h2>
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+<!--  <div class="card card&#45;&#45;2">-->
+<!--    <div class="point point&#45;&#45;2"></div>-->
+<!--    <h2>STUDENT</h2>-->
 
-    <div>
-      <button mat-raised-button disabled>Em breve</button>
-    </div>
-  </div>
-  <div class="card card--3">
-    <div class="point point--3"></div>
-    <h2>SPECIALIST</h2>
+<!--    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>-->
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
+<!--    <div>-->
+<!--      <button mat-raised-button disabled>Em breve</button>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="card card&#45;&#45;3">-->
+<!--    <div class="point point&#45;&#45;3"></div>-->
+<!--    <h2>SPECIALIST</h2>-->
 
-    <div>
-      <button mat-raised-button disabled>Em breve</button>
-    </div>
-  </div>
-  <div class="card card--4">
-    <div class="point point--4"></div>
-    <h2>NURSING</h2>
+<!--    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.-->
+<!--    </p>-->
 
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
+<!--    <div>-->
+<!--      <button mat-raised-button disabled>Em breve</button>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="card card&#45;&#45;4">-->
+<!--    <div class="point point&#45;&#45;4"></div>-->
+<!--    <h2>NURSING</h2>-->
 
-    <div>
-      <button mat-raised-button disabled>Em breve</button>
-    </div>
-  </div>
+<!--    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.-->
+<!--    </p>-->
+
+<!--    <div>-->
+<!--      <button mat-raised-button disabled>Em breve</button>-->
+<!--    </div>-->
+<!--  </div>-->
 </div>

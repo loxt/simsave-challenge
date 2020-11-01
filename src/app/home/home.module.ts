@@ -8,6 +8,7 @@ import { CardsComponent } from './cards/cards.component';
 import { BannerComponent } from './banner/banner.component';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,6 @@ import { RouterModule } from '@angular/router';
     CardsComponent,
     BannerComponent,
   ],
-  imports: [CommonModule, MatButtonModule, RouterModule],
+  imports: [CommonModule, MatButtonModule, RouterModule, HttpClientModule],
 })
 export class HomeModule {}
