@@ -6,7 +6,13 @@
   object-fit: cover;
   background-position: right top;
 
-  //@media only screen and (max-width: 1300px) {
+  @media only screen and (max-width: 700px) {
+    background: url('https://i.imgur.com/57PFOeZ.png') 80% center;
+    background-size: cover;
+  }
+
+
+    //@media only screen and (max-width: 1300px) {
   //  transform: translateX(-4rem);
   //}
 
