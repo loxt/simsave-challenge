@@ -1,9 +1,20 @@
 .login {
   display: grid;
-  grid-template-rows: 100vh;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#1767E5 50%, #F6F6F9 50%);
+  background: linear-gradient(#1767E5 55%, #F6F6F9 50%);
+
+  grid-template-rows: 90vh;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 15rem;
+      height: 10rem;
+      margin: 0 auto;
+    }
+  }
 
   &-container {
     background-color: #FFFFFF;
