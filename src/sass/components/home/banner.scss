@@ -1,9 +1,26 @@
 .banner {
-  img {
-    width: 100%;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    -webkit-user-drag: none;
-  }
+  height: 100%;
+  background-image: url('https://i.imgur.com/57PFOeZ.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: right top;
+
+  //@media only screen and (max-width: 1300px) {
+  //  transform: translateX(-4rem);
+  //}
+
+  //img {
+  //  width: 100%;
+  //  -webkit-user-select: none;
+  //  -moz-user-select: none;
+  //  user-select: none;
+  //  -webkit-user-drag: none;
+  //
+  //  @media only screen and(max-width: 650px) {
+  //    height: 600px;
+  //
+  //    object-fit: cover;
+  //  }
+  //}
 }

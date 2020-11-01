@@ -10,4 +10,18 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: #F6F6F9;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 73%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
 }
