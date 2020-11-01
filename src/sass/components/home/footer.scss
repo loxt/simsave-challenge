@@ -1,3 +1,90 @@
 .footer {
-  background-color: red;
+  background-color: #F6F6F9;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
+  grid-column-gap: 15rem;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (max-width: 1200px) {
+    .logo {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
+    .icons {
+      margin-bottom: 3rem;
+    }
+    margin: 2rem 3rem;
+  }
+
+  .logo {
+    position: relative;
+    left: 50%;
+    width: 15rem;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+
+    align-items: center;
+
+    .icon {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 3rem;
+      margin-right: 2rem;
+
+      background-color: #B3BDCC;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    .body {
+      display: flex;
+      justify-content: center;
+
+      flex-direction: column;
+      h2 {
+        font-size: 2rem;
+        color: #B3BDCC;
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: #B3BDCC;
+      }
+    }
+  }
+
+  .icons {
+    display: grid;
+    grid-template-columns: repeat(5, 5rem);
+    grid-gap: 2rem;
+
+    .icon {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 3rem;
+      background-color: #B3BDCC;
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
 }
