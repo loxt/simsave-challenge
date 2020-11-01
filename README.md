@@ -1,4 +1,11 @@
 # SimsaveChallenge
+100% Responsive.
+
+<img src="https://i.imgur.com/ppvif1g.png"/>
+<img src="https://i.imgur.com/QkoDPYs.png"/>
+<img src="https://i.imgur.com/sOXODRw.png"/>
+<img src="https://i.imgur.com/TpyX22c.png"/>
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
