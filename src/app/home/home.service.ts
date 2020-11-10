@@ -8,7 +8,7 @@ import handleError from '../handlers/error.handler';
   providedIn: 'root',
 })
 export class HomeService {
-  url = 'https://teste-simsave.getsandbox.com/home';
+  url = 'https://simsave-teste.getsandbox.com/home';
   constructor(private readonly http: HttpClient) {}
 
   getCards(): Observable<any> {
